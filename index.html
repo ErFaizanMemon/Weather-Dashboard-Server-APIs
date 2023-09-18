@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  <body>
+    <section class="heading" id="heading">
+      <div id="weatherHeading">
+        <h1 id="part1">Weather Forecast</h1>
+      </div>
+  
+      <div id="inputContainer">
+        <p id="citySearch">City: <input type="text" id="cityInput" /></p>
+        <button id="searchButton">Search</button>
+        <h2 id="cityName"></h2>
+        <div id="searchHistory"></div>
+      </div>
+    </section>
+    <section class="days" style="background-color: #415a1a">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <div class="card" style="color: #f36a0f; border-radius: 35px">
+              <div class="card-body p-4">
+                <div id="weatherContainer">
+                  <div id="day1" class="dayContainer"></div>
+                  <div id="day2" class="dayContainer"></div>
+                  <div id="day3" class="dayContainer"></div>
+                  <div id="day4" class="dayContainer"></div>
+                  <div id="day5" class="dayContainer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
+    ></script>
+    <script src="Assets/script.js"></script>
+  </body>
+</html>
